@@ -7,7 +7,27 @@ import sympy as sy
 def gausslegendre(f, a, b, n=20):
     ans = 0
     # Edit here to implement your code
+    # Let x = a point
+    # Let w = weight
+    [x, w] = np.polynomial.legendre.leggauss(n)
+    
+    # Using Gaussian Legendre formula here
+    # (b-a) * Summation (weight * f ( (b-a)t(i) + b + a) )   
+    #   /2                          (          /2        )
+    # where b and a is the integration interval value
+    #       t(i) is the x in this case which is legendere polynomial value
 
+    # here I seperate the Gaussian Legendre into 3 parts to calculate
+    p = 0
+    p = (b - a) /2
+    
+    q = 0
+    q = f(((b - a) / 2 * x) + ((b + a) / 2))
+    
+    r = 0
+    r = sum (w * q)
+    
+    ans = p * r  
     return ans
 
 if __name__ == "__main__":
