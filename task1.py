@@ -13,7 +13,7 @@ def gausslegendre(f, a, b, n=20):
     
     # Using Gaussian Legendre formula here
     # (b-a) * Summation (weight * f ( (b-a)t(i) + b + a) )   
-    # ( /2)                           (        /2        )
+    # ( /2)                           (        /2      )
     # where b and a is the integration interval value
     #       t(i) is the x in this case which is legendere polynomial value
 
