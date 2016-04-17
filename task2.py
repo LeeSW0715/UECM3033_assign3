@@ -27,7 +27,6 @@ ans = odeint(Equation , y0 , time , args=(a,b))
 # Plot for y0 and y1 against time
 plt.figure()
 plt.subplot(121)
-
 plt.plot(time, ans[:, 0], 'r', label='y0(t)')
 plt.plot(time, ans[:, 1], 'b', label='y1(t)')
 plt.legend(loc = 'best')
@@ -53,6 +52,7 @@ plt.show()
 # Let y1 be a matrix store value y0(0) = 0.11 and y1(0) = 1.0 as given
 y1  =  [0.11,1.0]
 ans = odeint(Equation , y1 , time , args=(a,b))
+
 # Plot for y0 and y1 against time
 plt.figure()
 plt.subplot(121)
