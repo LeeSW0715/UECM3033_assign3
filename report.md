@@ -67,7 +67,7 @@ Besides, the value of y0(0) changes does not effect much on the graph, just chan
 
 Is the system of ODE sensitive to initial condition? Explain.
 
-The system of ODE is not much sensitive in initial condition, but it is need to depend on the changes of initial value. For this task, the changes of y0 = | 0.1 ¨C 0.11 | = 0.01, there is not much big difference. If change the initial value to 100, y0 = | 0.1 ¨C 100 | = 99.9, then the starting point will at very above at y1 = 100 at y0 = 0 on graph.
+The system of ODE is not much sensitive in initial condition, but it is need to depend on the changes of initial value. For this task, the changes of y0 = | 0.1 - 0.11 | = 0.01, there is not much big difference. If change the initial value to 100, y0 = | 0.1 - 100 | = 99.9, then the starting point will at very above at y1 = 100 at y0 = 0 on graph.
 
 -----------------------------------
 
